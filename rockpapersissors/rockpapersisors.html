@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+#buttons {
+    text-align: center;
+
+
+}
+    body{
+      background-color: rgb(63, 190, 249);
+
+    }
+
+     
+
+
+h1{
+    text-align: center;
+}
+
+button{
+    padding: 15px;
+    padding-right: 20px;
+margin: 15px;
+
+}
+.YouChoose{
+ height: 150px;
+ width: 150px;
+ border: 2px solid black;
+ margin: 10px;
+ text-align: center;
+ font-size: 20px;
+ }
+ .ComputerChoose{
+ height: 150px;
+ width: 150;
+ border: 2px solid black;
+ margin: 10px;
+ text-align: center;
+ font-size: 20px;
+ }
+
+.battle{
+    margin: 30px;
+    display:flex;
+    justify-content: center;
+ }
+
+#result {
+    text-align: center;
+    font-size: 35px;
+
+    } 
+
+
+  @keyframes rainbow{
+
+   0%{
+    color:Green;
+   }
+      25%{
+        color: yellow;
+      }
+      50%{
+        color:red
+      }
+      75%{
+        color:blue
+      }
+       100%{
+        color:purple
+       }
+    }
+    h1{
+        animation: rainbow 2s infinite linear;
+    }
+ 
+
+
+</style>
+
+
+
+
+
+
+<body>
+    <h1> Rock Paper Sissors</h1>
+
+ <div id="buttons"> 
+         <button class= "rock" onclick="play('rock')"> rock</button>
+         <button class= "paper" onclick="play('paper')"> paper</button>
+         <button class="sissors" onclick="play('sissors')"> sissors</button>
+ </div>
+
+ <div class = "battle"> 
+
+   <div class = "YouChoose" id = "you"> You Choose</div>
+   <div class = "ComputerChoose" id = "cpu"> Cumputer Choose</div>
+
+   </div>
+
+   <div>
+    <p id = "result">Make Your move </p>
+    <p id = "result"> Player score:0 | Cpu score: 0</p>
+   </div>
+   
+
+
+
+   
+ <div class></div>
+ 
+ <script src="rps.js"></script>
+
+
+</body>
+</html>
